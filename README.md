@@ -2,6 +2,8 @@
 
 A Blender 5.1+ addon that passively tracks your shortcut usage and surfaces the shortcuts most worth learning right now — used recently, but not yet mastered.
 
+![demo](https://github.com/user-attachments/assets/59ffc389-60ad-4778-ad2e-8b84c778de2c)
+
 ## How it works
 
 The addon runs a background modal operator that watches for keypresses and mouse clicks during normal Blender use. Each shortcut is resolved against the active keymap and recorded with a timestamp and use count. A scoring algorithm weighs recency, learning progress, and mastery to decide which shortcuts to display in the overlay.
