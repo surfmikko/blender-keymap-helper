@@ -1,0 +1,16 @@
+schema_version = "1.0.0"
+
+id = "blender_keymap_helper"
+type = "add-on"
+version = "1.0.0"
+
+name = "Blender Keymap Helper"
+tagline = "Viewport overlay for learning keyboard shortcuts"
+maintainer = "Mikko Vatanen <mikko@vapaatyyli.fi>"
+
+tags = ["3D View"]
+blender_version_min = "5.1.0"
+
+website = "https://github.com/surfmikko/blender-keymap-helper"
+
+license = ["SPDX:GPL-2.0-or-later"]

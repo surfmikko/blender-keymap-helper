@@ -1,0 +1,7 @@
+.git
+.claude
+SPEC*
+IMPLEMENTATION*
+CLAUDE*
+dist
+__pycache__

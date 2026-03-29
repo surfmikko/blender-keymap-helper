@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "variants": {
+    "blender": {
+      "VIEW_3D#OBJECT#WINDOW": [
+        "object.select_all",
+        "object.delete",
+        "object.duplicate_move",
+        "object.join",
+        "transform.translate",
+        "transform.rotate",
+        "transform.resize",
+        "object.parent_set",
+        "object.origin_set",
+        "view3d.snap_selected_to_cursor",
+        "object.hide_view_set",
+        "object.hide_view_clear",
+        "object.shade_smooth",
+        "object.modifier_add",
+        "mesh.primitive_cube_add"
+      ],
+      "VIEW_3D#EDIT_MESH#WINDOW": [
+        "mesh.select_all",
+        "mesh.select_mode",
+        "mesh.extrude_region_move",
+        "mesh.inset_faces",
+        "mesh.bevel",
+        "mesh.loop_cut",
+        "mesh.loop_select",
+        "mesh.edge_ring_select",
+        "mesh.merge",
+        "mesh.separate",
+        "mesh.knife_tool",
+        "mesh.subdivide",
+        "mesh.fill",
+        "mesh.bridge_edge_loops",
+        "transform.shrink_fatten"
+      ]
+    },
+    "industry_compatible": {}
+  }
+}
