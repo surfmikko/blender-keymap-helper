@@ -271,14 +271,15 @@ def _draw_callback() -> None:
     box_w = _BOX_PADDING_X * 2 + combo_width + _COLUMN_GAP + name_width
     box_h = _BOX_PADDING_Y * 2 + line_height * len(entries)
 
-    margin_x: int = getattr(prefs, "margin_x", 20)
+    margin_left: int = getattr(prefs, "margin_left", 100)
+    margin_right: int = getattr(prefs, "margin_right", 20)
     margin_y: int = getattr(prefs, "margin_y", 20)
     position: str = getattr(prefs, "position", "BOTTOM_LEFT")
 
     if position == "BOTTOM_RIGHT":
-        box_x = region.width - box_w - margin_x
+        box_x = region.width - box_w - margin_right
     else:
-        box_x = margin_x
+        box_x = margin_left
 
     box_y = max(margin_y, _hud_clearance + margin_y)
 

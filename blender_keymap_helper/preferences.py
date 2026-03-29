@@ -28,9 +28,18 @@ class CheatsheetPreferences(bpy.types.AddonPreferences):
         default="BOTTOM_LEFT",
     )  # type: ignore[assignment]
 
-    margin_x: bpy.props.IntProperty(
-        name="Horizontal Margin",
-        description="Distance from the viewport edge in pixels",
+    margin_left: bpy.props.IntProperty(
+        name="Left Margin",
+        description="Distance from the left viewport edge in pixels",
+        default=124,
+        min=0,
+        max=500,
+        subtype="PIXEL",
+    )  # type: ignore[assignment]
+
+    margin_right: bpy.props.IntProperty(
+        name="Right Margin",
+        description="Distance from the right viewport edge in pixels",
         default=20,
         min=0,
         max=500,
@@ -120,7 +129,8 @@ class CheatsheetPreferences(bpy.types.AddonPreferences):
         row = box.row()
         row.prop(self, "position", expand=True)
         row = box.row(align=True)
-        row.prop(self, "margin_x")
+        row.prop(self, "margin_left")
+        row.prop(self, "margin_right")
         row.prop(self, "margin_y")
         box.prop(self, "font_size_offset")
         box.prop(self, "contrast", expand=True)
